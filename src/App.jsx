@@ -1,9 +1,11 @@
-import { useState } from "react";
-import Header from "./components/Header";
+import "./style/main.scss";
+//
+import Hero from "./components/Hero";
+
 export default function App() {
   return (
-    <>
-      <Header />
-    </>
+    <div className="page__wrapper">
+      <Hero />
+    </div>
   );
 }
