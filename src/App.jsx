@@ -1,11 +1,13 @@
-import "./style/main.scss";
-//
+import GalaxyBackground from "./components/InteractiveBackground";
 import Hero from "./components/Hero";
-
-export default function App() {
+import "./style/main.scss";
+function App() {
   return (
     <div className="page__wrapper">
       <Hero />
+      <GalaxyBackground />
     </div>
   );
 }
+
+export default App;
