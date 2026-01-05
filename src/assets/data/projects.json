@@ -6,7 +6,8 @@
     "description": "description",
     "thumnail_img": "https://placehold.co/600x400",
     "images": [],
-    "tech": []
+    "tech": [],
+    "web_url": ""
   },
   {
     "id": 2,
@@ -15,6 +16,7 @@
     "description": "description2",
     "thumnail_img": "https://placehold.co/600x400",
     "images": [],
-    "tech": []
+    "tech": [],
+    "web_url": ""
   }
 ]
