@@ -1,3 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap");
-//
-$hero-font: "Momo Trust Display", sans-serif;
+// ----- Fonts -----
+@font-face {
+  font-family: "heroFont";
+  src: url("../assets/fonts/star-font/starjedi/Starjedi.ttf");
+}
+$hero-font: "heroFont";
+
+
+// ----- Colors -----
