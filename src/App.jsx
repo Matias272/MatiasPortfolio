@@ -2,6 +2,7 @@ import GalaxyBackground from "./components/InteractiveBackground";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import { AiOutlineHome } from "react-icons/ai";
 import "./style/main.scss";
 export default function App() {
   const scrollTo = (id) => {
@@ -9,15 +10,8 @@ export default function App() {
       .getElementById(id)
       .scrollIntoView({ behavior: "smooth", inline: "start" });
   };
-
   return (
     <>
-      <nav className="nav">
-        <button onClick={() => scrollTo("hero")}>Hero</button>
-        <button onClick={() => scrollTo("about")}>About</button>
-        <button onClick={() => scrollTo("projects")}>Projects</button>
-      </nav>
-
       <main className="slider">
         <section id="hero">
           <Hero />
@@ -30,6 +24,9 @@ export default function App() {
         </section>
       </main>
       <GalaxyBackground />
+      <button onClick={() => scrollTo("hero")} className="home-button">
+        <AiOutlineHome />
+      </button>
     </>
   );
 }

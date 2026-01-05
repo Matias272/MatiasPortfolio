@@ -1,47 +1,55 @@
-@use '../style/variables.scss' as *;
+@use "../style/variables.scss" as *;
 
-// ----- Hero -----
 .hero {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero__content {
-  padding: 15px;
   padding-bottom: 30px;
   color: white;
   max-width: 600px;
   text-align: center;
   margin: auto;
-  background-color: rgba(230, 230, 230, 0.15);
   h1 {
     color: #fce700;
-    margin-bottom: 15px;
-    font-size: 78px;
+    margin-bottom: 20px;
+    font-size: 85px;
     font-weight: 500;
     font-family: $hero-font, "sans-serif";
     line-height: 1.1;
   }
   p {
     margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 700;
   }
-  .hero__skills {
+  &__content__skills {
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
     img {
-      width: 35px;
-      height: 35px;
+      width: 45px;
+      height: 45px;
       transition: transform 0.2s ease-in;
     }
     img:hover {
-        transform: scale(1.1);
+      transform: scale(1.1);
     }
   }
-
+  &__content__nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    button {
+      background-color: black;
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border-radius: 5px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.196);
+        cursor: pointer;
+      }
+    }
+  }
 }
