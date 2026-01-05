@@ -4,6 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import { AiOutlineHome } from "react-icons/ai";
 import "./style/main.scss";
+import PageButton from "./components/PageButton";
 export default function App() {
   const scrollTo = (id) => {
     document
@@ -16,17 +17,24 @@ export default function App() {
         <section id="hero">
           <Hero />
         </section>
-        <section id="about">
-          <About />
-        </section>
         <section id="projects">
           <Projects />
         </section>
+        <section id="about">
+          <About />
+        </section>
       </main>
       <GalaxyBackground />
-      <button onClick={() => scrollTo("hero")} className="home-button">
-        <AiOutlineHome />
-      </button>
+      <PageButton
+        onClick={() => scrollTo("hero")}
+        children={<AiOutlineHome color="white" size={25} />}
+        className={"button--top left"}
+      />
+      <PageButton
+        onClick={() => scrollTo("hero")}
+        children={"DK"}
+        className={"button--top right"}
+      />
     </>
   );
 }

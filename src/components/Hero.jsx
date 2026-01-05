@@ -1,3 +1,4 @@
+import PageButton from "./PageButton";
 import "./Hero.scss";
 export default function Hero() {
   const scrollTo = (id) => {
@@ -37,10 +38,13 @@ export default function Hero() {
       </ul>
       <ul className="hero__content__nav">
         <li>
-          <button onClick={() => scrollTo("about")}>About Me</button>
+          <PageButton
+            onClick={() => scrollTo("projects")}
+            children={"Projects"}
+          />
         </li>
         <li>
-          <button onClick={() => scrollTo("projects")}>Projects</button>
+          <PageButton onClick={() => scrollTo("about")} children={"About Me"} />
         </li>
       </ul>
     </div>
