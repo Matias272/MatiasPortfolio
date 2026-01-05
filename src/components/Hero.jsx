@@ -1,5 +1,10 @@
-import './Hero.scss'
+import "./Hero.scss";
 export default function Hero() {
+  const scrollTo = (id) => {
+    document
+      .getElementById(id)
+      .scrollIntoView({ behavior: "smooth", inline: "start" });
+  };
   return (
     <section className="hero">
       <div className="hero__content">
@@ -33,13 +38,7 @@ export default function Hero() {
         </ul>
         <ul className="hero__nav">
           <li>
-            <a href=""></a>
-          </li>
-          <li>
-            <a href=""></a>
-          </li>
-          <li>
-            <a href=""></a>
+            <button onClick={() => scrollTo("about")}>About</button>
           </li>
         </ul>
       </div>
