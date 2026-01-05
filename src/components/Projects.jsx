@@ -1,7 +1,3 @@
-export default function Projects(){
-    return (
-        <ul>
-
-        </ul>
-    )
+export default function Projects() {
+  return <h1>Projects</h1>;
 }

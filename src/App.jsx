@@ -1,13 +1,35 @@
 import GalaxyBackground from "./components/InteractiveBackground";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
 import "./style/main.scss";
-function App() {
+export default function App() {
+  const scrollTo = (id) => {
+    document
+      .getElementById(id)
+      .scrollIntoView({ behavior: "smooth", inline: "start" });
+  };
+
   return (
-    <div className="page__wrapper">
-      <Hero />
+    <>
+      <nav className="nav">
+        <button onClick={() => scrollTo("hero")}>Hero</button>
+        <button onClick={() => scrollTo("about")}>About</button>
+        <button onClick={() => scrollTo("projects")}>Projects</button>
+      </nav>
+
+      <main className="slider">
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+      </main>
       <GalaxyBackground />
-    </div>
+    </>
   );
 }
-
-export default App;

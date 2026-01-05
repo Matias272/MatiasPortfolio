@@ -19,3 +19,53 @@ button {
 }
 
 // ----- Page -----
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  flex: 0 0 100vw;
+  height: 100vh;
+
+  scroll-snap-align: start;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  background: rgba(0,0,0,0.7); /* semi-transparent if you like */
+  z-index: 1000; /* make sure it sits above everything */
+}
+
+.nav button {
+  color: white;
+  background: none;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
