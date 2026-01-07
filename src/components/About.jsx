@@ -5,7 +5,9 @@ export default function About() {
       <div className="about__img">
         <figure>
           <img src="https://placehold.co/400" alt="" />
-          <figcaption></figcaption>
+          <figcaption>
+            <ul></ul>
+          </figcaption>
         </figure>
       </div>
       <div className="about__content">
@@ -29,8 +31,12 @@ export default function About() {
           user experience in everything I build.
         </p>
         <button className="about__content__cv-btn">Download my CV</button>
-        <ul>
-          <li></li>
+        <ul className="about__content__contact-ul">
+          <li>
+            <a href="">
+              <img src="../icons/github_dark.svg" alt="" />
+            </a>
+          </li>
         </ul>
       </div>
     </div>
