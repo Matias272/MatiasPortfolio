@@ -1,3 +1,4 @@
+import { IoIosPhonePortrait, IoIosMail } from "react-icons/io";
 import "./About.scss";
 export default function About() {
   return (
@@ -6,7 +7,11 @@ export default function About() {
         <figure>
           <img src="https://placehold.co/400" alt="" />
           <figcaption>
-            <ul></ul>
+            <ul>
+              <li>Team-Oriented</li>
+              <li>UI & Styling</li>
+              <li>Clean Code</li>
+            </ul>
           </figcaption>
         </figure>
       </div>
@@ -33,11 +38,31 @@ export default function About() {
         <button className="about__content__cv-btn">Download my CV</button>
         <ul className="about__content__contact-ul">
           <li>
-            <a href="">
+            <a href="https://github.com/Matias272" target="blank">
               <img src="../icons/github_dark.svg" alt="" />
             </a>
           </li>
+          <li>
+            <a href="">
+              <img src="../icons/linkedin.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <IoIosMail size={25} />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <IoIosPhonePortrait size={25} />
+            </a>
+          </li>
         </ul>
+      </div>
+      <div className="about__skills">
+        <h2>Technologies & Skills</h2>
+        <p>Technologies and methodologies I normally work with</p>
+        <ul></ul>
       </div>
     </div>
   );

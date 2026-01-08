@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "title",
-    "short_des": "short des",
+    "title": "Newsify",
+    "short_des": "",
     "description": "description",
     "thumnail_img": "https://placehold.co/600x400",
     "images": [],
