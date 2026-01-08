@@ -1,3 +1,4 @@
+// Page Button
 .button {
   background-color: black;
   font-size: 18px;
@@ -8,26 +9,5 @@
   &:hover {
     background-color: rgba(255, 255, 255, 0.196);
     cursor: pointer;
-  }
-}
-.button--top {
-  padding: 0;
-  position: fixed;
-  top: 30px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.button--top.left {
-  left: 30px;
-}
-.button--top.right {
-  right: 30px;
-}
-@media (max-width: 678px) {
-  .button {
-    font-size: 16px;
   }
 }
