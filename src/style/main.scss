@@ -24,7 +24,7 @@ button {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
@@ -37,25 +37,37 @@ section {
   align-items: center;
   justify-content: center;
 }
+.strong-text {
+  color: $royal-purple;
+}
 // ----- Top Buttons (Home&Language) -----
-.button--top {
+.button.top {
+  background: black;
   padding: 0;
   position: fixed;
-  top: 30px;
+  top: 20px;
   width: 50px;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.button--top.left {
-  left: 30px;
+.button.top.left {
+  left: 20px;
 }
-.button--top.right {
-  right: 30px;
+.button.top.right {
+  right: 20px;
 }
 @media (max-width: 678px) {
-  .button {
-    font-size: 16px;
+  .button.top {
+    top: 82%;
+  }
+
+  .button.top.left {
+    left: auto;
+    right: 2px;
+  }
+  .button.top.right {
+    right: 2px;
+  }
+  .button.top.right {
+    top: 91%;
   }
 }

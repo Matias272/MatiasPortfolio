@@ -28,12 +28,12 @@ export default function App() {
       <PageButton
         onClick={() => scrollTo("hero")}
         children={<AiOutlineHome color="white" size={25} />}
-        className={"button--top left"}
+        className={"top left"}
       />
       <PageButton
         onClick={() => scrollTo("hero")}
         children={"DK"}
-        className={"button--top right"}
+        className={"top right"}
       />
     </>
   );

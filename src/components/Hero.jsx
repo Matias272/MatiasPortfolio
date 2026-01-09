@@ -1,6 +1,9 @@
 import PageButton from "./PageButton";
 import "./Hero.scss";
 export default function Hero() {
+  console.log(  new Date(-[])
+);
+  
   const scrollTo = (id) => {
     document
       .getElementById(id)

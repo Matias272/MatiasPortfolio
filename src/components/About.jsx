@@ -29,11 +29,13 @@ export default function About() {
         <div className="about__hero__content">
           <h2>About Me</h2>
           <p>
-            Hello World! I'm Matias Jørgensen, a front-end web development
-            student focused on building clean, well-structured, and visually
-            consistent user interfaces. I care about writing readable,
-            maintainable code and paying close attention to styling and layout
-            details to create polished results.
+            Hello World! I'm{" "}
+            <strong className="strong-text">Matias Jørgensen</strong>, a
+            front-end web development student focused on building clean,
+            well-structured, and visually consistent user website or apps. I
+            care about writing readable, maintainable code and paying close
+            attention to styling and layout details to create very very very
+            good results.
           </p>
           <p>
             I work well in collaborative environments and enjoy contributing to
@@ -42,13 +44,18 @@ export default function About() {
             adapt quickly to new workflows and challenges.
           </p>
           <p>
-            I''m motivated by learning through real projects and continuously
+            I'm motivated by learning through real projects and continuously
             improving my skills, with a strong focus on clarity, structure, and
             user experience in everything I build.
           </p>
-          <button className="about__hero__content__cv-btn">
+          <a
+            href="/files/CV-matias.pdf"
+            download
+            className="about__hero__content__cv-btn"
+          >
             Download my CV
-          </button>
+          </a>
+
           <ul className="about__hero__content__contact-ul">
             <li>
               <a href="https://github.com/Matias272" target="blank">
@@ -56,27 +63,49 @@ export default function About() {
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/matias-j%C3%B8rgensen-29a703327/"
+                target="blank"
+              >
                 <img src="../icons/linkedin.svg" alt="" />
               </a>
             </li>
             <li>
-              <a href="">
-                <IoIosMail size={25} />
+              <a href="mailto:matjorrub@gmail.com" target="blank">
+                <IoIosMail size={30} />
               </a>
             </li>
             <li>
-              <a href="">
-                <IoIosPhonePortrait size={25} />
+              <a href="tel:+4591117821">
+                <IoIosPhonePortrait size={30} />
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div className="about__skills">
-        <h2>Technologies & Skills</h2>
-        <p>Technologies and methodologies I normally work with</p>
-        <ul className=""></ul>
+        <div className="about__skills__con">
+          <p>Personal Skills</p>
+          <ul className="about__skills__ul">
+            <li>Handsome</li>
+            <li>185 cm</li>
+            <li>x3 Unreal in Fortnite</li>
+            <li>Rich</li>
+            <li>Mexican</li>
+          </ul>
+        </div>
+        <div className="about__skills__con">
+          <p>Technologies</p>
+          <ul className="about__skills__ul">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>REACT</li>
+            <li>SCSS</li>
+            <li>VITEST</li>
+            <li>ZOD</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
