@@ -27,16 +27,14 @@ button {
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  &__page {
+    min-width: 100vw;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+  }
 }
 
-section {
-  flex: 0 0 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .strong-text {
   color: $royal-purple;
 }

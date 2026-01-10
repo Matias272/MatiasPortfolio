@@ -14,15 +14,15 @@ export default function App() {
   return (
     <>
       <main className="slider">
-        <section id="hero">
+        <div className="slider__page" id="hero">
           <Hero />
-        </section>
-        <section id="projects">
+        </div>
+        <div className="slider__page" id="projects">
           <Projects />
-        </section>
-        <section id="about">
+        </div>
+        <div className="slider__page" id="about">
           <About />
-        </section>
+        </div>
       </main>
       <GalaxyBackground />
       <PageButton
