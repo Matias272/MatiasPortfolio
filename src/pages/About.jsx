@@ -103,27 +103,30 @@ export default function About() {
             </div>
           </section>
           <section className="about__skills">
-            <div className="about__skills__con">
-              <p>Personal Skills</p>
-              <ul className="about__skills__ul">
-                <li>User Focused</li>
-                <li>Adaptable</li>
-                <li>Organized</li>
-                <li>Team Player</li>
-                <li>Curious</li>
-              </ul>
-            </div>
-            <div className="about__skills__con">
-              <p>Technologies</p>
-              <ul className="about__skills__ul">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-                <li>REACT</li>
-                <li>SCSS</li>
-                <li>VITEST</li>
-                <li>ZOD</li>
-              </ul>
+            <h3>Skills & Expertise</h3>
+            <div className="about__skills__wrap">
+              <div className="about__skills__wrap__con">
+                <p>Personal Skills</p>
+                <ul className="about__skills__wrap__ul">
+                  <li>User Focused</li>
+                  <li>Adaptable</li>
+                  <li>Organized</li>
+                  <li>Team Player</li>
+                  <li>Curious</li>
+                </ul>
+              </div>
+              <div className="about__skills__wrap__con">
+                <p>Technologies</p>
+                <ul className="about__skills__wrap__ul">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JAVASCRIPT</li>
+                  <li>REACT</li>
+                  <li>SCSS</li>
+                  <li>VITEST</li>
+                  <li>ZOD</li>
+                </ul>
+              </div>
             </div>
           </section>
         </main>

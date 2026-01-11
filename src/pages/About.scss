@@ -1,6 +1,6 @@
 @use "../style/variables.scss" as *;
 .about {
-  margin-top: 85px;
+  margin-top: 90px;
   border: 2px solid white;
   border-radius: 5px;
   padding: 20px;
@@ -84,33 +84,40 @@
     }
   }
   // About Skills
-  &__skills {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    &__con {
-      width: 100%;
-      background: $glass-purple;
-      border-radius: 5px;
-      border: 2px solid rgba(155, 140, 255, 0.95);
-      p {
-        padding: 5px 10px;
-        background-color: $royal-purple;
-      }
+  .about__skills {
+    h3 {
+      text-align: center;
     }
-    &__ul {
-      padding: 25px 10px;
+    &__wrap {
       display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      li {
-        margin-bottom: 5px;
-        border: 1px solid rgba(155, 140, 255, 0.95);
-        border-radius: 15px;
-        background-color: $royal-purple;
-        padding: 5px 12px;
-        &:hover {
-          cursor: default;
+      justify-content: space-between;
+      gap: 50px;
+      &__con {
+        width: 100%;
+        background: $glass-purple;
+        border-radius: 5px;
+        border: 2px solid rgba(155, 140, 255, 0.95);
+        p {
+          font-size: 20px;
+          font-weight: 600;
+          padding: 5px 10px;
+          background-color: $royal-purple;
+        }
+      }
+      &__ul {
+        padding: 25px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        li {
+          margin-bottom: 5px;
+          border: 1px solid rgba(155, 140, 255, 0.95);
+          border-radius: 15px;
+          background-color: $royal-purple;
+          padding: 5px 12px;
+          &:hover {
+            cursor: default;
+          }
         }
       }
     }
@@ -133,7 +140,7 @@
 
     flex-direction: column;
   }
-  .about__skills {
+  .about__skills__wrap {
     flex-direction: column-reverse;
     justify-content: center;
   }
@@ -156,8 +163,5 @@
   }
   .button.qualities {
     width: 250px;
-  }
-  .about__hero__content__contact-ul {
-    margin-bottom: 60px;
   }
 }

@@ -8,13 +8,13 @@ $hero-font: "heroFont";
 // ----- Colors -----
 $glass-color: linear-gradient(
   135deg,
-  rgba(255, 255, 255, 0.1),
-  rgba(255, 255, 255, 0.05)
+  rgba(255, 255, 255, 0.2),
+  rgba(255, 255, 255, 0.1)
 );
 $glass-color-hover: linear-gradient(
   135deg,
-  rgba(255, 255, 255, 0.2),
-  rgba(255, 255, 255, 0.1)
+  rgba(255, 255, 255, 0.1),
+  rgba(255, 255, 255, 0.5)
 );
 $royal-purple: #6d5df6;
 $button-purple: linear-gradient(
@@ -29,6 +29,6 @@ $button-purple-hover: linear-gradient(
 );
 $glass-purple: linear-gradient(
   135deg,
-  rgba(109, 93, 246, 0.18),
+  rgba(109, 93, 246, 0.5),
   rgba(138, 123, 255, 0.12)
 );
