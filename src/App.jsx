@@ -3,6 +3,7 @@ import { AnimatePresence } from "motion/react";
 import GalaxyBackground from "./components/InteractiveBackground";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
 import "./style/main.scss";
 export default function App() {
   function AnimatedRoutes() {
@@ -12,6 +13,7 @@ export default function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </AnimatePresence>
     );

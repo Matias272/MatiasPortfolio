@@ -92,7 +92,7 @@ export default function About() {
               <ul className="about__hero__content__contact-ul">
                 {contact.map((info) => {
                   return (
-                    <li key={info.key}>
+                    <li key={info.id}>
                       <a href={info.link} target="blank">
                         {info.icon}
                       </a>
