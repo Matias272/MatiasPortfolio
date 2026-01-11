@@ -1,40 +1,29 @@
+import { BrowserRouter, Route, Routes, useLocation } from "react-router";
+import { AnimatePresence } from "motion/react";
 import GalaxyBackground from "./components/InteractiveBackground";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import { AiOutlineHome } from "react-icons/ai";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
 import "./style/main.scss";
-import PageButton from "./components/PageButton";
 export default function App() {
-  const scrollTo = (id) => {
-    document
-      .getElementById(id)
-      .scrollIntoView({ behavior: "smooth", inline: "start" });
-  };
+  function AnimatedRoutes() {
+    const location = useLocation();
+    return (
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </AnimatePresence>
+    );
+  }
   return (
     <>
-      <main className="slider">
-        <div className="slider__page" id="hero">
-          <Hero />
-        </div>
-        <div className="slider__page" id="projects">
-          <Projects />
-        </div>
-        <div className="slider__page" id="about">
-          <About />
-        </div>
-      </main>
+      <div className="pages-wrapper">
+        <BrowserRouter>
+          <AnimatedRoutes />
+        </BrowserRouter>
+      </div>
       <GalaxyBackground />
-      <PageButton
-        onClick={() => scrollTo("hero")}
-        children={<AiOutlineHome color="white" size={25} />}
-        className={"top left"}
-      />
-      <PageButton
-        onClick={() => scrollTo("hero")}
-        children={"DK"}
-        className={"top right"}
-      />
     </>
   );
 }

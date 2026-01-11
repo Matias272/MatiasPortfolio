@@ -18,34 +18,37 @@ button {
   background-color: none;
   border: none;
 }
-
-// ----- Page Slider -----
-.slider {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  &__page {
-    min-width: 100vw;
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-  }
+h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
 }
-
+// Special
 .strong-text {
   color: $royal-purple;
 }
+p,
+h2 {
+  background-color: black;
+}
+// ----- Page Wrapper -----
+.pages-wrapper {
+  padding: 0 20px;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // ----- Top Buttons (Home&Language) -----
 .button.top {
-  background: black;
-  padding: 0;
   position: fixed;
   top: 20px;
-  width: 50px;
-  height: 50px;
+  background: #222;
+  padding: 0;
+  width: 45px;
+  height: 45px;
 }
 .button.top.left {
   left: 20px;
@@ -54,18 +57,16 @@ button {
   right: 20px;
 }
 @media (max-width: 678px) {
-  .button.top {
+  .button.top.left,
+  .button.top.right {
+    border-radius: 100%;
+    left: auto;
+    right: 1px;
+  }
+  .button.top.left {
     top: 82%;
   }
-
-  .button.top.left {
-    left: auto;
-    right: 2px;
-  }
   .button.top.right {
-    right: 2px;
-  }
-  .button.top.right {
-    top: 91%;
+    top: 90%;
   }
 }

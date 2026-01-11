@@ -1,0 +1,66 @@
+@use "../style/variables.scss" as *;
+
+.hero {
+  max-width: 600px;
+  &__content {
+    text-align: center;
+    h1 {
+      color: #fce700;
+      margin-bottom: 15px;
+      font-size: 85px;
+      font-weight: 500;
+      font-family: $hero-font, "sans-serif";
+      line-height: 1.1;
+    }
+    p {
+      margin-bottom: 25px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    &__skills {
+      margin-bottom: 35px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease-out;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+    &__nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}
+// Resposive
+@media (max-width: 678px) {
+  .hero {
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 20px;
+    }
+    &__content__skills {
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+@media (max-width: 432px) {
+  .hero {
+    h1 {
+      font-size: 52px;
+    }
+  }
+}
