@@ -5,4 +5,15 @@
   border-radius: 5px;
   padding: 20px;
   width: 100%;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+  }
+}
+
+.loading,
+.empty {
+  color: #bdbdbd;
+  padding: 24px;
 }

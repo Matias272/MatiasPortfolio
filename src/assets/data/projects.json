@@ -2,21 +2,56 @@
   {
     "id": 1,
     "title": "Newsify",
-    "short_des": "",
-    "description": "description",
+    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times, allowing users to customize categories, save articles, and switch between light and dark themes.",
+    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
     "thumnail_img": "https://placehold.co/600x400",
+    "hero_img": "https://placehold.co/1200x800",
     "images": [],
-    "tech": [],
-    "web_url": ""
+    "tech": ["React/JS", "SCSS", "News API"],
+    "web_url": "https://newsifydk.netlify.app/"
   },
   {
-    "id": 2,
-    "title": "title2",
-    "short_des": "short des2",
-    "description": "description2",
+    "id": 1,
+    "title": "Newsify",
+    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times, allowing users to customize categories, save articles, and switch between light and dark themes.",
+    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
     "thumnail_img": "https://placehold.co/600x400",
+    "hero_img": "https://placehold.co/1200x800",
     "images": [],
-    "tech": [],
-    "web_url": ""
+    "tech": ["React/JS", "SCSS", "News API"],
+    "web_url": "https://newsifydk.netlify.app/"
+  },
+  {
+    "id": 1,
+    "title": "Newsify",
+    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times, allowing users to customize categories, save articles, and switch between light and dark themes.",
+    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
+    "thumnail_img": "https://placehold.co/600x400",
+    "hero_img": "https://placehold.co/1200x800",
+    "images": [],
+    "tech": ["React/JS", "SCSS", "News API"],
+    "web_url": "https://newsifydk.netlify.app/"
+  },
+  {
+    "id": 1,
+    "title": "Newsify",
+    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times, allowing users to customize categories, save articles, and switch between light and dark themes.",
+    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
+    "thumnail_img": "",
+    "hero_img": "https://placehold.co/1200x800",
+    "images": [],
+    "tech": ["React/JS", "SCSS", "News API"],
+    "web_url": "https://newsifydk.netlify.app/"
+  },
+  {
+    "id": 1,
+    "title": "Newsify",
+    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times, allowing users to customize categories, save articles, and switch between light and dark themes.",
+    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
+    "thumnail_img": "https://placehold.co/600x400",
+    "hero_img": "https://placehold.co/1200x800",
+    "images": [],
+    "tech": ["React/JS", "SCSS", "News API"],
+    "web_url": "https://newsifydk.netlify.app/"
   }
 ]
