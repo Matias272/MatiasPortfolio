@@ -35,7 +35,7 @@ export default function About() {
         animate={{ clipPath: "inset(0 0% 0 0)" }}
         exit={{ clipPath: "inset(0 100% 0 0)" }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        style={{ overflow: "hidden" }}
+        style={{ width: "100%", overflow: "hidden" }}
       >
         <main className="about">
           <h2 className="about-h2-phone">About Me</h2>

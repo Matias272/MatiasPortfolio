@@ -22,7 +22,7 @@ export default function Projects() {
         animate={{ clipPath: "inset(0 0 0 0)" }}
         exit={{ clipPath: "inset(0 100% 0 0)" }}
         transition={{ duration: 0.3 }}
-        style={{ overflow: "hidden" }}
+        style={{ width: "100%", overflow: "hidden" }}
       >
         <main className="projects">
           <h2>Projects</h2>

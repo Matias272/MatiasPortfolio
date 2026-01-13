@@ -6,17 +6,15 @@
 $hero-font: "heroFont";
 
 // ----- Colors -----
-$glass-color: linear-gradient(
-  135deg,
-  rgba(255, 255, 255, 0.2),
-  rgba(255, 255, 255, 0.1)
-);
+$glass-color: rgba(0, 0, 0, 0.85);
 $glass-color-hover: linear-gradient(
   135deg,
-  rgba(255, 255, 255, 0.1),
-  rgba(255, 255, 255, 0.5)
+  rgba(81, 78, 253, 0.85),
+  rgba(155, 105, 255, 0.85)
 );
-$royal-purple: #6d5df6;
+//
+$royal-purple: #7768fd;
+//
 $button-purple: linear-gradient(
   135deg,
   rgba(109, 93, 246, 0.85),
@@ -27,8 +25,9 @@ $button-purple-hover: linear-gradient(
   rgba(124, 109, 255, 0.95),
   rgba(155, 140, 255, 0.95)
 );
-$glass-purple: linear-gradient(
+//
+$dark-glass-purple: linear-gradient(
   135deg,
-  rgba(109, 93, 246, 0.5),
-  rgba(138, 123, 255, 0.12)
+  rgba(50, 40, 90, 0.6),
+  rgba(35, 30, 70, 0.15)
 );

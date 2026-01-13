@@ -24,7 +24,7 @@ const GalaxyBackground = () => {
     }
 
     const draw = () => {
-      ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
+      ctx.fillStyle = "#0B0D12";
       ctx.fillRect(0, 0, w, h);
 
       stars.current.forEach((s) => {
@@ -50,7 +50,7 @@ const GalaxyBackground = () => {
 
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "#F5F7FA";
         ctx.fill();
       });
 
