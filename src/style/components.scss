@@ -19,18 +19,17 @@
 
 // Project Card
 .pro-card {
-  background: $dark-glass-purple;
-  color: black;
-  border-radius: 8px;
+  border: $border;
+  background: $glass-color;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
   &:hover {
     cursor: pointer;
     transform: translateY(-6px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
   }
   &__img {
+    border-radius: 5px;
     width: 100%;
     height: 150px;
     background: #111;
@@ -45,42 +44,29 @@
     }
   }
   &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
     padding: 10px;
     h3 {
-      margin-bottom: 5px;
+      margin-bottom: 2px;
     }
     p {
-      margin-top: 15px;
-      margin-bottom: 25px;
+      margin-bottom: 10px;
     }
     a {
+      text-transform: uppercase;
+      font-size: 16px;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 5px;
       width: 150px;
-      border-radius: 5px;
+      border-radius: 15px;
       padding: 4px 16px;
-      font-size: 18px;
-      background-color: rgb(29, 142, 255);
-      margin-bottom: 8px;
-    }
-  }
-  &__tech {
-    margin-top: 30px;
-    padding: 15px 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    li {
-      background: $royal-purple;
-      padding: 4px 12px;
-      font-size: 14px;
-      font-weight: 400;
-      border-radius: 10px;
+      background-color: #138bf5;
+      margin-bottom: 10px;
     }
   }
 }

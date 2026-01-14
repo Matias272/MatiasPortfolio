@@ -107,22 +107,6 @@
           background-color: $royal-purple;
         }
       }
-      &__ul {
-        padding: 25px 10px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        li {
-          margin-bottom: 5px;
-          border: 1px solid rgba(155, 140, 255, 0.95);
-          border-radius: 15px;
-          background-color: $royal-purple;
-          padding: 5px 12px;
-          &:hover {
-            cursor: default;
-          }
-        }
-      }
     }
   }
 }

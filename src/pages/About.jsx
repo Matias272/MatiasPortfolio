@@ -107,7 +107,7 @@ export default function About() {
             <div className="about__skills__wrap">
               <div className="about__skills__wrap__con">
                 <p>Personal Skills</p>
-                <ul className="about__skills__wrap__ul">
+                <ul className="technologies ab">
                   <li>User Focused</li>
                   <li>Adaptable</li>
                   <li>Organized</li>
@@ -117,7 +117,7 @@ export default function About() {
               </div>
               <div className="about__skills__wrap__con">
                 <p>Technologies</p>
-                <ul className="about__skills__wrap__ul">
+                <ul className="technologies ab">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JAVASCRIPT</li>
