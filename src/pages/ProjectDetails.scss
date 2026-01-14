@@ -1,0 +1,26 @@
+@use "../style/variables.scss" as *;
+.proDetails {
+  margin-top: 90px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 100%;
+  &__img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  &__content {
+    padding: 10px 20px;
+    h2 {
+      margin-bottom: 15px;
+    }
+    ul {
+      margin-bottom: 25px;
+    }
+    p {
+      margin-bottom: 35px;
+      max-width: 900px;
+    }
+  }
+}

@@ -78,9 +78,9 @@ h3 {
   flex-wrap: wrap;
   gap: 15px;
   li {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 3px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: $royal-purple;
     padding: 4px 16px;
     &:hover {
@@ -92,5 +92,23 @@ h3 {
   padding: 20px 10px;
   li {
     font-size: 16px;
+  }
+}
+
+// Website Link
+.website {
+  text-transform: uppercase;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 125px;
+  border-radius: 10px;
+  padding: 5px 0;
+  background-color: #138bf5;
+  margin-bottom: 10px;
+  &:hover {
+    background-color: #0f65b0;
   }
 }

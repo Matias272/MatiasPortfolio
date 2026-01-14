@@ -27,6 +27,17 @@ const contact = [
   },
   { link: "tel:+4591117821", icon: <IoIosPhonePortrait size={30} />, id: 4 },
 ];
+const skills = {
+  tech: ["HTML", "CSS, JAVASCRIPT", "REACT", "SCSS", "VITEST", "ZOD"],
+  personalSkills: [
+    "User focused",
+    "Adaptable",
+    "Organized",
+    "Team Player",
+    "Curious",
+  ],
+};
+
 export default function About() {
   return (
     <>
@@ -47,16 +58,14 @@ export default function About() {
               </div>
               <figcaption>
                 <ul className="about__hero__left__ul">
-                  {qualities.map((quality) => {
-                    return (
-                      <li key={quality.name}>
-                        <PageButton className={"qualities"}>
-                          {quality.icon}
-                          {quality.name}
-                        </PageButton>
-                      </li>
-                    );
-                  })}
+                  {qualities.map((quality) => (
+                    <li key={quality.name}>
+                      <PageButton className={"qualities"}>
+                        {quality.icon}
+                        {quality.name}
+                      </PageButton>
+                    </li>
+                  ))}
                 </ul>
               </figcaption>
             </figure>
@@ -90,15 +99,13 @@ export default function About() {
               </a>
 
               <ul className="about__hero__content__contact-ul">
-                {contact.map((info) => {
-                  return (
-                    <li key={info.id}>
-                      <a href={info.link} target="blank">
-                        {info.icon}
-                      </a>
-                    </li>
-                  );
-                })}
+                {contact.map((info) => (
+                  <li key={info.id}>
+                    <a href={info.link} target="blank">
+                      {info.icon}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </section>
@@ -108,23 +115,17 @@ export default function About() {
               <div className="about__skills__wrap__con">
                 <p>Personal Skills</p>
                 <ul className="technologies ab">
-                  <li>User Focused</li>
-                  <li>Adaptable</li>
-                  <li>Organized</li>
-                  <li>Team Player</li>
-                  <li>Curious</li>
+                  {skills.personalSkills.map((skill) => (
+                    <li key={skill}>{skill}</li>
+                  ))}
                 </ul>
               </div>
               <div className="about__skills__wrap__con">
                 <p>Technologies</p>
                 <ul className="technologies ab">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JAVASCRIPT</li>
-                  <li>REACT</li>
-                  <li>SCSS</li>
-                  <li>VITEST</li>
-                  <li>ZOD</li>
+                  {skills.tech.map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
                 </ul>
               </div>
             </div>
