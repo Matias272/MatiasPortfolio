@@ -4,6 +4,7 @@ import { IoIosPhonePortrait, IoIosMail, IoIosHome } from "react-icons/io";
 import { FaCode, FaPeopleGroup, FaPenRuler, FaDownload } from "react-icons/fa6";
 import PageButton from "../components/PageButton";
 import "./About.scss";
+import Techs from "../components/Techs";
 const qualities = [
   { name: "Team-Oriented", icon: <FaPeopleGroup /> },
   { name: "UI & Design", icon: <FaPenRuler /> },
@@ -102,7 +103,7 @@ export default function About() {
                 {contact.map((info) => (
                   <li key={info.id}>
                     <a href={info.link} target="blank">
-                      {info.icon}
+                      <PageButton className={"contact"} children={info.icon} />
                     </a>
                   </li>
                 ))}
@@ -114,19 +115,11 @@ export default function About() {
             <div className="about__skills__wrap">
               <div className="about__skills__wrap__con">
                 <p>Personal Skills</p>
-                <ul className="technologies ab">
-                  {skills.personalSkills.map((skill) => (
-                    <li key={skill}>{skill}</li>
-                  ))}
-                </ul>
+                {<Techs m={skills.personalSkills} className={"ab"} />}
               </div>
               <div className="about__skills__wrap__con">
                 <p>Technologies</p>
-                <ul className="technologies ab">
-                  {skills.tech.map((t) => (
-                    <li key={t}>{t}</li>
-                  ))}
-                </ul>
+                {<Techs m={skills.tech} className={"ab"} />}
               </div>
             </div>
           </section>

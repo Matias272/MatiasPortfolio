@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router";
 import SeeWebsite from "./seeWebsite";
+import Techs from "./Techs";
 
 export default function ProjectCard({ project }) {
   const navigate = useNavigate();
@@ -31,11 +32,7 @@ export default function ProjectCard({ project }) {
         <div onClick={(e) => e.stopPropagation()}>
           <SeeWebsite url={project.web_url} />
 
-          <ul className="technologies">
-            {project.tech.map((t) => (
-              <li key={t}>{t}</li>
-            ))}
-          </ul>
+          {<Techs m={project.tech} />}
         </div>
       </figcaption>
     </figure>

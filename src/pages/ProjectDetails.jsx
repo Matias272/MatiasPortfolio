@@ -5,6 +5,7 @@ import { IoIosPhonePortrait, IoIosMail, IoIosHome } from "react-icons/io";
 import PageButton from "../components/PageButton";
 import "./ProjectDetails.scss";
 import SeeWebsite from "../components/seeWebsite";
+import Techs from "../components/Techs";
 export default function ProjectDetails() {
   const { id } = useParams();
   const project = projects.find((p) => String(p.id) === String(id));
@@ -36,13 +37,9 @@ export default function ProjectDetails() {
             />
             <figcaption className="proDetails__content">
               <h2>{project.title}</h2>
-              <ul className="proDetails__ul technologies">
-                {project.tech.map((t) => (
-                  <li key={t}>{t}</li>
-                ))}
-              </ul>
+              <Techs m={project.tech} />
               <p>{project.description}</p>
-              <SeeWebsite url={project.web_url} />
+              <SeeWebsite className={"details"} url={project.web_url} />
             </figcaption>
           </figure>
         </main>

@@ -1,23 +1,74 @@
 @use "./variables.scss" as *;
-// Page Button
+// ----- Buttons -----
 .button {
-  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 18px;
   text-transform: uppercase;
-  padding: 8px 16px;
+  border: $border;
   border-radius: 5px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  img {
+    width: 30px;
+    height: 30px;
+  }
   &:hover {
-    background: $button-purple-hover;
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
-
-// Project Card
+.circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: $glass-color-hover;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+// Buttons (Home&Language) -----
+.button.top {
+  position: fixed;
+  top: 20px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
+.button.top.left {
+  left: 20px;
+}
+.button.top.right {
+  right: 20px;
+}
+@media (max-width: 678px) {
+  .button.top.left,
+  .button.top.right {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border: 2px solid $royal-purple;
+    border-radius: 100%;
+    left: auto;
+    right: 10px;
+  }
+  .button.top.left {
+    top: 80%;
+  }
+  .button.top.right {
+    top: 88%;
+  }
+}
+// Buttons Contact
+.button.contact {
+  padding: 10px;
+  border-radius: 50%;
+}
+// ----- Project Card -----
 .pro-card {
   border: $border;
   background: $glass-color;
@@ -53,5 +104,51 @@
     p {
       margin-bottom: 10px;
     }
+  }
+}
+
+// Website Link
+.website {
+  text-transform: uppercase;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 125px;
+  border-radius: 10px;
+  padding: 5px 0;
+  background-color: #138bf5;
+  margin-bottom: 10px;
+  &:hover {
+    background-color: #0f65b0;
+  }
+}
+.website.details {
+  padding: 8px 0;
+  width: 180px;
+  font-size: 18px;
+  font-weight: 500;
+}
+// Tech
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  li {
+    font-size: 12px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    background-color: $royal-purple;
+    padding: 4px 16px;
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+.technologies.ab {
+  padding: 20px 10px;
+  li {
+    font-size: 16px;
   }
 }
