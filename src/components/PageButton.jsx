@@ -1,5 +1,10 @@
-import { hover, motion } from "motion/react";
-export default function PageButton({ onClick, children, className }) {
+import { motion } from "motion/react";
+export default function PageButton({
+  onClick,
+  children,
+  className,
+  hover = true,
+}) {
   return (
     <motion.button
       className={`button ${className}`}
@@ -7,19 +12,21 @@ export default function PageButton({ onClick, children, className }) {
       initial={"rest"}
       onClick={onClick}
     >
-      <motion.span
-        className="circle"
-        variants={{
-          rest: {
-            scale: 0,
-            transition: { duration: 0 },
-          },
-          hover: {
-            scale: 20,
-            transition: { duration: 0.5, ease: "easeOut" },
-          },
-        }}
-      />
+      {hover && (
+        <motion.span
+          className="circle"
+          variants={{
+            rest: {
+              scale: 0,
+              transition: { duration: 0 },
+            },
+            hover: {
+              scale: 20,
+              transition: { duration: 0.5, ease: "easeOut" },
+            },
+          }}
+        />
+      )}
 
       {children}
     </motion.button>

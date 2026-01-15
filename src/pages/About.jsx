@@ -14,19 +14,27 @@ const contact = [
   {
     link: "https://github.com/Matias272",
     icon: <img src="../icons/github_dark.svg" alt="" />,
+    title: "Matias272",
     id: 1,
   },
   {
     link: "https://www.linkedin.com/in/matias-j%C3%B8rgensen-29a703327/",
     icon: <img src="../icons/linkedin.svg" alt="" />,
+    title: "Matias Jørgensen",
     id: 2,
   },
   {
     link: "mailto:matjorrub@gmail.com",
     icon: <IoIosMail size={30} />,
+    title: "matjorrub@gmail.com",
     id: 3,
   },
-  { link: "tel:+4591117821", icon: <IoIosPhonePortrait size={30} />, id: 4 },
+  {
+    link: "tel:+4591117821",
+    icon: <IoIosPhonePortrait size={30} />,
+    title: "91 11 78 21",
+    id: 4,
+  },
 ];
 const skills = {
   tech: ["HTML", "CSS, JAVASCRIPT", "REACT", "SCSS", "VITEST", "ZOD"],
@@ -61,7 +69,7 @@ export default function About() {
                 <ul className="about__hero__left__ul">
                   {qualities.map((quality) => (
                     <li key={quality.name}>
-                      <PageButton className={"qualities"}>
+                      <PageButton hover={false} className={"qualities"}>
                         {quality.icon}
                         {quality.name}
                       </PageButton>
@@ -102,7 +110,7 @@ export default function About() {
               <ul className="about__hero__content__contact-ul">
                 {contact.map((info) => (
                   <li key={info.id}>
-                    <a href={info.link} target="blank">
+                    <a title={info.title} href={info.link} target="blank">
                       <PageButton className={"contact"} children={info.icon} />
                     </a>
                   </li>

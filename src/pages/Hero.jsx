@@ -57,7 +57,7 @@ export default function Hero() {
           </section>
         </main>
       </motion.div>
-      <PageButton className={"top right"} children={"DK"} />
+      <PageButton hover={true} className={"top right"} children={"DK"} />
     </>
   );
 }
