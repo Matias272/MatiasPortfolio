@@ -42,6 +42,13 @@ export default function ProjectDetails() {
               <SeeWebsite className={"details"} url={project.web_url} />
             </figcaption>
           </figure>
+          <ul className="proDetails__gallery">
+            {project.images.map((img) => (
+              <li key={img}>
+                <img src={`/${img}`} />
+              </li>
+            ))}
+          </ul>
         </main>
       </motion.div>
       <Link to="/">

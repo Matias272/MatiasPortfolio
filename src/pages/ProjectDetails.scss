@@ -24,4 +24,33 @@
       max-width: 900px;
     }
   }
+  &__gallery {
+    padding: 10px 20px;
+    column-count: 3;
+    gap: 20px;
+    li {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      margin: 0 0 20px;
+    }
+    img {
+      transition: transform 0.25s ease-in-out;
+      width: 100%;
+    }
+    img:hover {
+      transform: scale(1.025);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .proDetails__gallery {
+    column-count: 2;
+  }
+}
+@media (max-width: 678px) {
+  .proDetails__gallery {
+    column-count: 1;
+  }
 }
