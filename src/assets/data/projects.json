@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Newsify",
     "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times API.",
-    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
+    "description": "Newsify is a mobile-first news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com. Users can save/archive articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. The project was made with an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript",
     "thumbnail_img": "src/assets/img/newsify/thumbnail.jpg",
     "images": [
       "src/assets/img/newsify/thumbnail.jpg",
@@ -13,77 +13,24 @@
       "src/assets/img/newsify/newsify(4).jpg",
       "src/assets/img/newsify/newsify(5).jpg"
     ],
-    "tech": ["React/JS", "SCSS", "News API"],
+    "tech": ["React/JS", "SCSS", "News API", "HTML"],
     "web_url": "https://newsifydk.netlify.app/"
   },
   {
     "id": 2,
-    "title": "Hi-fi Horizon",
-    "short_des": "This assignment covers setup, navigation, and data retrieval.",
-    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
+    "title": "Hi-fi Horizons",
+    "short_des": "Hi-fi horizons is a project that covers setup, navigation and data retrieval.",
+    "description": "HI-FI is a web application for a web store that presents the store's products divided by categories. The user of the site must be able to navigate the different products easily and clearly and be able to search for products using keywords. The project has an local express server where all the data is. And where i get my data from.",
     "thumbnail_img": "src/assets/img/hifi/thumbnail.jpg",
-    "images": [],
-    "tech": ["React/JS", "SCSS", "News API"],
-    "web_url": "https://hifi-horizon.vercel.app/"
-  },
-  {
-    "id": 1,
-    "title": "Newsify",
-    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times API.",
-    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
-    "thumbnail_img": "src/assets/img/newsify/thumbnail.jpg",
-    "images": [],
-    "tech": ["React/JS", "SCSS", "News API"],
-    "web_url": "https://newsifydk.netlify.app/"
-  },
-  {
-    "id": 2,
-    "title": "Hi-fi Horizon",
-    "short_des": "This assignment covers setup, navigation, and data retrieval.",
-    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
-    "thumbnail_img": "src/assets/img/hifi/thumbnail.jpg",
-    "images": [],
-    "tech": ["React/JS", "SCSS", "News API"],
-    "web_url": "https://hifi-horizon.vercel.app/"
-  },
-  {
-    "id": 1,
-    "title": "Newsify",
-    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times API.",
-    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
-    "thumbnail_img": "src/assets/img/newsify/thumbnail.jpg",
-    "images": [],
-    "tech": ["React/JS", "SCSS", "News API"],
-    "web_url": "https://newsifydk.netlify.app/"
-  },
-  {
-    "id": 2,
-    "title": "Hi-fi Horizon",
-    "short_des": "This assignment covers setup, navigation, and data retrieval.",
-    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
-    "thumbnail_img": "src/assets/img/hifi/thumbnail.jpg",
-    "images": [],
-    "tech": ["React/JS", "SCSS", "News API"],
-    "web_url": "https://hifi-horizon.vercel.app/"
-  },
-  {
-    "id": 1,
-    "title": "Newsify",
-    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times API.",
-    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
-    "thumbnail_img": "src/assets/img/newsify/thumbnail.jpg",
-    "images": [],
-    "tech": ["React/JS", "SCSS", "News API"],
-    "web_url": "https://newsifydk.netlify.app/"
-  },
-  {
-    "id": 2,
-    "title": "Hi-fi Horizon",
-    "short_des": "This assignment covers setup, navigation, and data retrieval.",
-    "description": "Newsify is a mobile-optimized news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com The app includes a settings panel where users can enable or disable news categories and toggle between light and dark themes. All preferences are stored locally, ensuring settings persist across sessions. Users can save articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. These micro-interactions are designed specifically for mobile to create a fast, app-like experience. The project uses an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript, includes unit testing with Vitest, and is deployed via GitHub Pages / Netlify.",
-    "thumbnail_img": "src/assets/img/hifi/thumbnail.jpg",
-    "images": [],
-    "tech": ["React/JS", "SCSS", "News API"],
+    "images": [
+      "src/assets/img/hifi/thumbnail.jpg",
+      "src/assets/img/hifi/hifi(1).jpg",
+      "src/assets/img/hifi/hifi(2).jpg",
+      "src/assets/img/hifi/hifi(3).jpg",
+      "src/assets/img/hifi/hifi(4).jpg",
+      "src/assets/img/hifi/hifi(5).jpg"
+    ],
+    "tech": ["React/JS", "SCSS", "HTML", "EXPRESS"],
     "web_url": "https://hifi-horizon.vercel.app/"
   }
 ]
