@@ -27,10 +27,25 @@
       "src/assets/img/hifi/hifi(1).jpg",
       "src/assets/img/hifi/hifi(2).jpg",
       "src/assets/img/hifi/hifi(3).jpg",
-      "src/assets/img/hifi/hifi(4).jpg",
-      "src/assets/img/hifi/hifi(5).jpg"
+      "src/assets/img/hifi/hifi(4).jpg"
     ],
     "tech": ["React/JS", "SCSS", "HTML", "EXPRESS"],
     "web_url": "https://hifi-horizon.vercel.app/"
+  },
+  {
+    "id": 3,
+    "title": "Hit-Strength",
+    "short_des": "Hit Strength was one of my first is a vanilla html, css and js project that covers the basics like data retrieval.",
+    "description": "HitString is a responsive e-commerce web page for gym apparel built with vanilla HTML, CSS, and JavaScript. It showcases core front-end skills through semantic structure, modern styling, and dynamic functionality such as product display and basic cart interactions, all implemented without external libraries.",
+    "thumbnail_img": "src/assets/img/hit/thumbnail.jpg",
+    "images": [
+      "src/assets/img/hit/thumbnail.jpg",
+      "src/assets/img/hit/hit(1).jpg",
+      "src/assets/img/hit/hit(2).jpg",
+      "src/assets/img/hit/hit(3).jpg",
+      "src/assets/img/hit/hit(4).jpg"
+    ],
+    "tech": ["HTML", "CSS", "JAVASCRIPT"],
+    "web_url": "https://hitstrength.netlify.app/"
   }
 ]
