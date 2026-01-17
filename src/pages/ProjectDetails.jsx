@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { useParams, Link } from "react-router";
 import projects from "../assets/data/projects.json";
-import { IoIosPhonePortrait, IoIosMail, IoIosHome } from "react-icons/io";
+import { IoIosHome, IoIosArrowBack } from "react-icons/io";
 import PageButton from "../components/PageButton";
 import "./ProjectDetails.scss";
 import SeeWebsite from "../components/seeWebsite";
@@ -28,6 +28,16 @@ export default function ProjectDetails() {
         transition={{ duration: 0.3, ease: "easeInOut" }}
         style={{ width: "100%", overflow: "hidden" }}
       >
+        <div className="proDetails__top-link">
+          <Link to={"/projects"}>
+            <IoIosArrowBack
+              className="proDetails__top-link__icon"
+              color="white"
+              size={35}
+            />{" "}
+            Back to Projects
+          </Link>
+        </div>
         <main className="proDetails">
           <figure>
             <img

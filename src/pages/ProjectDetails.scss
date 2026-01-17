@@ -1,10 +1,29 @@
 @use "../style/variables.scss" as *;
 .proDetails {
-  margin-top: 90px;
   margin-bottom: 20px;
   border: 2px solid white;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   width: 100%;
+  &__top-link {
+    border: 2px solid white;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    margin-top: 90px;
+    a {
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      width: 100%;
+      font-size: 25px;
+      background-color: black;
+      &:hover .proDetails__top-link__icon {
+        transform: translateX(-17px);
+      }
+    }
+    &__icon {
+      transition: all 0.3s ease-in-out;
+    }
+  }
   &__img {
     width: 100%;
     max-height: 300px;
