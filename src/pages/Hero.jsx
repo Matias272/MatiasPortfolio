@@ -8,7 +8,7 @@ export default function Hero() {
   const { t, i18n } = useTranslation();
 
   const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === "en" ? "da" : "en");
+    i18n.changeLanguage(i18n.language === "da" ? "en" : "da");
   };
   return (
     <>
@@ -21,10 +21,8 @@ export default function Hero() {
       >
         <main className="hero page-wrapper">
           <section className="hero__content">
-            <h1>{t("welcome")}</h1>
-
             <h1>Matias Jørgensen</h1>
-            <p>{t("Frontend Developer Student")}</p>
+            <p>{t("frontendStudent")}</p>
             <ul className="hero__content__skills">
               <li>
                 <img src="../icons/html5.svg" alt="html5" />
@@ -54,12 +52,12 @@ export default function Hero() {
             <ul className="hero__content__nav">
               <li>
                 <Link to={"/projects"}>
-                  <PageButton children={t("Projects")} />
+                  <PageButton children={t("projects")} />
                 </Link>
               </li>
               <li>
                 <Link to={"/about"}>
-                  <PageButton children={t("About Me")} />
+                  <PageButton children={t("aboutMe")} />
                 </Link>
               </li>
             </ul>

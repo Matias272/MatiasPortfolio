@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { useParams, Link } from "react-router";
+import { useTranslation } from "react-i18next";
 import projects from "../assets/data/projects.json";
 import { IoIosHome, IoIosArrowBack } from "react-icons/io";
 import PageButton from "../components/PageButton";
@@ -7,6 +8,11 @@ import "./ProjectDetails.scss";
 import SeeWebsite from "../components/seeWebsite";
 import Techs from "../components/Techs";
 export default function ProjectDetails() {
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === "da" ? "en" : "da");
+  };
   const { id } = useParams();
   const project = projects.find((p) => String(p.id) === String(id));
 
@@ -35,7 +41,7 @@ export default function ProjectDetails() {
               color="white"
               size={35}
             />{" "}
-            Back to Projects
+            {t("backToProjects")}
           </Link>
         </div>
         <main className="proDetails">
@@ -46,17 +52,17 @@ export default function ProjectDetails() {
               alt={project.title}
             />
             <figcaption className="proDetails__content">
-              <h2>{project.title}</h2>
+              <h2>{t(project.title)}</h2>
               <Techs m={project.tech} />
               <p>
-                {project.description}
+                {t(project.description)}
                 {project.figma && (
                   <a
                     className="proDetails__design"
                     href={project.figma}
                     target="blank"
                   >
-                    See design
+                    {t("seeDesign")}
                   </a>
                 )}
               </p>
@@ -79,7 +85,11 @@ export default function ProjectDetails() {
         </PageButton>
       </Link>
 
-      <PageButton className="top right">DK</PageButton>
+      <PageButton
+        onClick={toggleLanguage}
+        children={t("button")}
+        className="top right"
+      />
     </>
   );
 }

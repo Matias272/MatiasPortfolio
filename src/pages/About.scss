@@ -1,4 +1,7 @@
 @use "../style/variables.scss" as *;
+strong {
+  color: $royal-purple;
+}
 .about {
   margin-top: 90px;
   margin-bottom: 20px;

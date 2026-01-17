@@ -2,52 +2,59 @@ import { motion } from "motion/react";
 import { Link } from "react-router";
 import { IoIosPhonePortrait, IoIosMail, IoIosHome } from "react-icons/io";
 import { FaCode, FaPeopleGroup, FaPenRuler, FaDownload } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 import PageButton from "../components/PageButton";
 import "./About.scss";
 import Techs from "../components/Techs";
-const qualities = [
-  { name: "Team-Oriented", icon: <FaPeopleGroup /> },
-  { name: "UI & Design", icon: <FaPenRuler /> },
-  { name: "Clean Code", icon: <FaCode /> },
-];
-const contact = [
-  {
-    link: "https://github.com/Matias272",
-    icon: <img src="../icons/github_dark.svg" alt="" />,
-    title: "Matias272",
-    id: 1,
-  },
-  {
-    link: "https://www.linkedin.com/in/matias-j%C3%B8rgensen-29a703327/",
-    icon: <img src="../icons/linkedin.svg" alt="" />,
-    title: "Matias Jørgensen",
-    id: 2,
-  },
-  {
-    link: "mailto:matjorrub@gmail.com",
-    icon: <IoIosMail size={30} />,
-    title: "matjorrub@gmail.com",
-    id: 3,
-  },
-  {
-    link: "tel:+4591117821",
-    icon: <IoIosPhonePortrait size={30} />,
-    title: "91 11 78 21",
-    id: 4,
-  },
-];
-const skills = {
-  tech: ["HTML", "CSS, JAVASCRIPT", "REACT", "SCSS", "VITEST", "ZOD"],
-  personalSkills: [
-    "User focused",
-    "Adaptable",
-    "Organized",
-    "Team Player",
-    "Curious",
-  ],
-};
+import { Trans } from "react-i18next";
 
 export default function About() {
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === "da" ? "en" : "da");
+  };
+  const qualities = [
+    { name: t("teamOriented"), icon: <FaPeopleGroup /> },
+    { name: t("uiDesign"), icon: <FaPenRuler /> },
+    { name: t("cleanCode"), icon: <FaCode /> },
+  ];
+  const contact = [
+    {
+      link: "https://github.com/Matias272",
+      icon: <img src="../icons/github_dark.svg" alt="" />,
+      title: "Matias272",
+      id: 1,
+    },
+    {
+      link: "https://www.linkedin.com/in/matias-j%C3%B8rgensen-29a703327/",
+      icon: <img src="../icons/linkedin.svg" alt="" />,
+      title: "Matias Jørgensen",
+      id: 2,
+    },
+    {
+      link: "mailto:matjorrub@gmail.com",
+      icon: <IoIosMail size={30} />,
+      title: "matjorrub@gmail.com",
+      id: 3,
+    },
+    {
+      link: "tel:+4591117821",
+      icon: <IoIosPhonePortrait size={30} />,
+      title: "91 11 78 21",
+      id: 4,
+    },
+  ];
+  const skills = {
+    tech: ["HTML", "CSS", "JAVASCRIPT", "REACT", "SCSS", "VITEST", "ZOD"],
+    personalSkills: [
+      t("userFocused"),
+      t("adaptable"),
+      t("organized"),
+      t("teamPlayer"),
+      t("curious"),
+    ],
+  };
   return (
     <>
       <motion.div
@@ -58,7 +65,7 @@ export default function About() {
         style={{ width: "100%", overflow: "hidden" }}
       >
         <main className="about">
-          <h2 className="about-h2-phone">About Me</h2>
+          <h2 className="about-h2-phone">{t("aboutTitle")}</h2>
 
           <section className="about__hero">
             <figure className="about__hero__left">
@@ -79,31 +86,16 @@ export default function About() {
               </figcaption>
             </figure>
             <div className="about__hero__content">
-              <h2 className="about-h2-desktop">About Me</h2>
+              <h2 className="about-h2-desktop">{t("aboutTitle")}</h2>
               <p>
-                Hello World! I'm{" "}
-                <strong className="strong-text">Matias Jørgensen</strong>, a
-                front-end web development student focused on building clean,
-                well-structured, and visually consistent user website or apps. I
-                care about writing readable, maintainable code and paying close
-                attention to styling and layout details to create very very very
-                good results.
+                <Trans i18nKey="aboutText1" />
               </p>
-              <p>
-                I work well in collaborative environments and enjoy contributing
-                to team-based projects. Having lived in both Mexico and Denmark,
-                I'm comfortable working with different people and perspectives,
-                and I adapt quickly to new workflows and challenges.
-              </p>
-              <p>
-                I'm motivated by learning through real projects and continuously
-                improving my skills, with a strong focus on clarity, structure,
-                and user experience in everything I build.
-              </p>
+              <p>{t("aboutText2")}</p>
+              <p>{t("aboutText3")}</p>
               <a href="/files/CV-matias.pdf" download>
                 <PageButton className={"CV"}>
                   <FaDownload />
-                  Download my CV
+                  {t("downloadCV")}
                 </PageButton>
               </a>
 
@@ -119,14 +111,14 @@ export default function About() {
             </div>
           </section>
           <section className="about__skills">
-            <h3>Skills & Expertise</h3>
+            <h3>{t("skillsExpertise")}</h3>
             <div className="about__skills__wrap">
               <div className="about__skills__wrap__con">
-                <p>Personal Skills</p>
+                <p>{t("personalSkills")}</p>
                 {<Techs m={skills.personalSkills} className={"ab"} />}
               </div>
               <div className="about__skills__wrap__con">
-                <p>Technologies</p>
+                <p>{t("technologies")}</p>
                 {<Techs m={skills.tech} className={"ab"} />}
               </div>
             </div>
@@ -136,7 +128,11 @@ export default function About() {
       <Link to={"/"}>
         <PageButton className={"top left"} children={<IoIosHome size={22} />} />
       </Link>
-      <PageButton className={"top right"} children={"DK"} />
+      <PageButton
+        onClick={toggleLanguage}
+        className={"top right"}
+        children={t("button")}
+      />
     </>
   );
 }

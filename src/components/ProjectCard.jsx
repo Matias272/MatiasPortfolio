@@ -1,8 +1,10 @@
 import { Link, useNavigate } from "react-router";
+import { useTranslation } from "react-i18next";
 import SeeWebsite from "./seeWebsite";
 import Techs from "./Techs";
 
 export default function ProjectCard({ project }) {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   if (!project) return null;
@@ -25,8 +27,8 @@ export default function ProjectCard({ project }) {
 
       <figcaption className="pro-card__content">
         <div>
-          <h3>{project.title}</h3>
-          <p>{project.short_des}</p>
+          <h3>{t(project.title)}</h3>
+          <p>{t(project.short_des)}</p>
         </div>
 
         <div onClick={(e) => e.stopPropagation()}>

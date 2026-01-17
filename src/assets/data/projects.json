@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "title": "Cafe Luna",
+    "title": "projectData.1.title",
     "figma": "https://www.figma.com/design/cnJWZfOwPWDQ3LKnrGIYVr/Cafe-Luna?node-id=0-1&p=f&t=XodLt4E9VgWLr7pE-0",
-    "short_des": "Cafe Luna is a clean, responsive coffee shop website built with pure HTML, CSS, and JavaScript, based on my own Figma-design.",
-    "description": "Cafe Luna is a modern, responsive coffee shop website built entirely with HTML, CSS, and JavaScript, featuring a custom interface designed from scratch in Figma. The project focuses on clean visual hierarchy, smooth micro-interactions, and a cozy brand aesthetic that reflects the identity of an independent café.",
+    "short_des": "projectData.1.shortDes",
+    "description": "projectData.1.description",
     "thumbnail_img": "src/assets/img/cafe/thumbnail.jpg",
     "images": [
       "src/assets/img/cafe/thumbnail.jpg",
@@ -18,9 +18,9 @@
   },
   {
     "id": 2,
-    "title": "Hi-fi Horizons",
-    "short_des": "Hi-fi horizons is a project that covers setup, navigation and data retrieval and it was my first real project with react.",
-    "description": "HI-FI is a web application for a web store that presents the store's products divided by categories. The user of the site must be able to navigate the different products easily and clearly and be able to search for products using keywords. The project has an local express server where all the data is. And where i get my data from.",
+    "title": "projectData.2.title",
+    "short_des": "projectData.2.shortDes",
+    "description": "projectData.2.description",
     "thumbnail_img": "src/assets/img/hifi/thumbnail.jpg",
     "images": [
       "src/assets/img/hifi/thumbnail.jpg",
@@ -34,9 +34,9 @@
   },
   {
     "id": 3,
-    "title": "Hit-Strength",
-    "short_des": "Hit Strength was one of my first is a vanilla html, css and js project that covers the basics like data retrieval.",
-    "description": "HitString is a responsive e-commerce web page for gym apparel built with vanilla HTML, CSS, and JavaScript. It showcases core front-end skills through semantic structure, modern styling, and dynamic functionality such as product display and basic cart interactions, all implemented without external libraries.",
+    "title": "projectData.3.title",
+    "short_des": "projectData.3.shortDes",
+    "description": "projectData.3.description",
     "thumbnail_img": "src/assets/img/hit/thumbnail.jpg",
     "images": [
       "src/assets/img/hit/thumbnail.jpg",
@@ -50,9 +50,9 @@
   },
   {
     "id": 4,
-    "title": "Newsify",
-    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times API.",
-    "description": "Newsify is a mobile-first news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com. Users can save/archive articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. The project was made with an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript",
+    "title": "projectData.4.title",
+    "short_des": "projectData.4.shortDes",
+    "description": "projectData.4.description",
     "thumbnail_img": "src/assets/img/newsify/thumbnail.jpg",
     "images": [
       "src/assets/img/newsify/thumbnail.jpg",
