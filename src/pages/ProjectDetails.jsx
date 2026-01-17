@@ -5,7 +5,7 @@ import projects from "../assets/data/projects.json";
 import { IoIosHome, IoIosArrowBack } from "react-icons/io";
 import PageButton from "../components/PageButton";
 import "./ProjectDetails.scss";
-import SeeWebsite from "../components/seeWebsite";
+import SeeWebsite from "../components/SeeWebsite";
 import Techs from "../components/Techs";
 export default function ProjectDetails() {
   const { t, i18n } = useTranslation();
