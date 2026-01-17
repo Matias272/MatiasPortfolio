@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "title": "Newsify",
-    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times API.",
-    "description": "Newsify is a mobile-first news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com. Users can save/archive articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. The project was made with an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript",
-    "thumbnail_img": "src/assets/img/newsify/thumbnail.jpg",
+    "title": "Cafe Luna",
+    "figma": "https://www.figma.com/design/cnJWZfOwPWDQ3LKnrGIYVr/Cafe-Luna?node-id=0-1&p=f&t=XodLt4E9VgWLr7pE-0",
+    "short_des": "Cafe Luna is a clean, responsive coffee shop website built with pure HTML, CSS, and JavaScript, based on my own Figma-design.",
+    "description": "Cafe Luna is a modern, responsive coffee shop website built entirely with HTML, CSS, and JavaScript, featuring a custom interface designed from scratch in Figma. The project focuses on clean visual hierarchy, smooth micro-interactions, and a cozy brand aesthetic that reflects the identity of an independent café.",
+    "thumbnail_img": "src/assets/img/cafe/thumbnail.jpg",
     "images": [
-      "src/assets/img/newsify/thumbnail.jpg",
-      "src/assets/img/newsify/newsify(1).jpg",
-      "src/assets/img/newsify/newsify(2).jpg",
-      "src/assets/img/newsify/newsify(3).jpg",
-      "src/assets/img/newsify/newsify(4).jpg",
-      "src/assets/img/newsify/newsify(5).jpg"
+      "src/assets/img/cafe/thumbnail.jpg",
+      "src/assets/img/cafe/cafe(1).jpg",
+      "src/assets/img/cafe/cafe(2).jpg",
+      "src/assets/img/cafe/cafe(3).jpg",
+      "src/assets/img/cafe/cafe(4).jpg"
     ],
-    "tech": ["React/JS", "SCSS", "News API", "HTML"],
-    "web_url": "https://newsifydk.netlify.app/"
+    "tech": ["HTML", "CSS", "JAVASCRIPT"],
+    "web_url": "https://cafe-luna-projekt.vercel.app/index.html"
   },
   {
     "id": 2,
@@ -34,23 +34,6 @@
   },
   {
     "id": 3,
-    "title": "Cafe Luna",
-    "figma": "https://www.figma.com/design/cnJWZfOwPWDQ3LKnrGIYVr/Cafe-Luna?node-id=0-1&p=f&t=XodLt4E9VgWLr7pE-0",
-    "short_des": "Cafe Luna is a clean, responsive coffee shop website built with pure HTML, CSS, and JavaScript, based on my own Figma-design.",
-    "description": "Cafe Luna is a modern, responsive coffee shop website built entirely with HTML, CSS, and JavaScript, featuring a custom interface designed from scratch in Figma. The project focuses on clean visual hierarchy, smooth micro-interactions, and a cozy brand aesthetic that reflects the identity of an independent café.",
-    "thumbnail_img": "src/assets/img/cafe/thumbnail.jpg",
-    "images": [
-      "src/assets/img/cafe/thumbnail.jpg",
-      "src/assets/img/cafe/cafe(1).jpg",
-      "src/assets/img/cafe/cafe(2).jpg",
-      "src/assets/img/cafe/cafe(3).jpg",
-      "src/assets/img/cafe/cafe(4).jpg"
-    ],
-    "tech": ["HTML", "CSS", "JAVASCRIPT"],
-    "web_url": "https://cafe-luna-projekt.vercel.app/index.html"
-  },
-  {
-    "id": 4,
     "title": "Hit-Strength",
     "short_des": "Hit Strength was one of my first is a vanilla html, css and js project that covers the basics like data retrieval.",
     "description": "HitString is a responsive e-commerce web page for gym apparel built with vanilla HTML, CSS, and JavaScript. It showcases core front-end skills through semantic structure, modern styling, and dynamic functionality such as product display and basic cart interactions, all implemented without external libraries.",
@@ -64,5 +47,22 @@
     ],
     "tech": ["HTML", "CSS", "JAVASCRIPT"],
     "web_url": "https://hitstrength.netlify.app/"
+  },
+  {
+    "id": 4,
+    "title": "Newsify",
+    "short_des": "Newsify is a mobile-first news web app that displays categorized articles from The New York Times API.",
+    "description": "Newsify is a mobile-first news web application built around a clean, customizable reading experience using data from The New York Times. Articles are organized into expandable and collapsible categories with smooth animations, and users can open full articles directly on nytimes.com. Users can save/archive articles to a private news archive using swipe gestures, where saved items can later be accessed or deleted through the same interaction pattern. The project was made with an automated frontend workflow with Vite, modular Sass, and vanilla JavaScript",
+    "thumbnail_img": "src/assets/img/newsify/thumbnail.jpg",
+    "images": [
+      "src/assets/img/newsify/thumbnail.jpg",
+      "src/assets/img/newsify/newsify(1).jpg",
+      "src/assets/img/newsify/newsify(2).jpg",
+      "src/assets/img/newsify/newsify(3).jpg",
+      "src/assets/img/newsify/newsify(4).jpg",
+      "src/assets/img/newsify/newsify(5).jpg"
+    ],
+    "tech": ["React/JS", "SCSS", "News API", "HTML"],
+    "web_url": "https://newsifydk.netlify.app/"
   }
 ]
