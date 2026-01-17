@@ -38,7 +38,19 @@ export default function ProjectDetails() {
             <figcaption className="proDetails__content">
               <h2>{project.title}</h2>
               <Techs m={project.tech} />
-              <p>{project.description}</p>
+              <p>
+                {project.description}
+                {project.figma && (
+                  <a
+                    className="proDetails__design"
+                    href={project.figma}
+                    target="blank"
+                  >
+                    See design
+                  </a>
+                )}
+              </p>
+
               <SeeWebsite className={"details"} url={project.web_url} />
             </figcaption>
           </figure>

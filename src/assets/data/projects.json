@@ -19,7 +19,7 @@
   {
     "id": 2,
     "title": "Hi-fi Horizons",
-    "short_des": "Hi-fi horizons is a project that covers setup, navigation and data retrieval.",
+    "short_des": "Hi-fi horizons is a project that covers setup, navigation and data retrieval and it was my first real project with react.",
     "description": "HI-FI is a web application for a web store that presents the store's products divided by categories. The user of the site must be able to navigate the different products easily and clearly and be able to search for products using keywords. The project has an local express server where all the data is. And where i get my data from.",
     "thumbnail_img": "src/assets/img/hifi/thumbnail.jpg",
     "images": [
@@ -34,6 +34,23 @@
   },
   {
     "id": 3,
+    "title": "Cafe Luna",
+    "figma": "https://www.figma.com/design/cnJWZfOwPWDQ3LKnrGIYVr/Cafe-Luna?node-id=0-1&p=f&t=XodLt4E9VgWLr7pE-0",
+    "short_des": "Cafe Luna is a clean, responsive coffee shop website built with pure HTML, CSS, and JavaScript, based on my own Figma-design.",
+    "description": "Cafe Luna is a modern, responsive coffee shop website built entirely with HTML, CSS, and JavaScript, featuring a custom interface designed from scratch in Figma. The project focuses on clean visual hierarchy, smooth micro-interactions, and a cozy brand aesthetic that reflects the identity of an independent café.",
+    "thumbnail_img": "src/assets/img/cafe/thumbnail.jpg",
+    "images": [
+      "src/assets/img/cafe/thumbnail.jpg",
+      "src/assets/img/cafe/cafe(1).jpg",
+      "src/assets/img/cafe/cafe(2).jpg",
+      "src/assets/img/cafe/cafe(3).jpg",
+      "src/assets/img/cafe/cafe(4).jpg"
+    ],
+    "tech": ["HTML", "CSS", "JAVASCRIPT"],
+    "web_url": "https://cafe-luna-projekt.vercel.app/index.html"
+  },
+  {
+    "id": 4,
     "title": "Hit-Strength",
     "short_des": "Hit Strength was one of my first is a vanilla html, css and js project that covers the basics like data retrieval.",
     "description": "HitString is a responsive e-commerce web page for gym apparel built with vanilla HTML, CSS, and JavaScript. It showcases core front-end skills through semantic structure, modern styling, and dynamic functionality such as product display and basic cart interactions, all implemented without external libraries.",
