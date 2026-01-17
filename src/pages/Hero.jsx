@@ -1,8 +1,15 @@
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
+
 import { motion } from "motion/react";
 import PageButton from "../components/PageButton";
 import "./Hero.scss";
 export default function Hero() {
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === "en" ? "da" : "en");
+  };
   return (
     <>
       <motion.div
@@ -14,8 +21,10 @@ export default function Hero() {
       >
         <main className="hero page-wrapper">
           <section className="hero__content">
+            <h1>{t("welcome")}</h1>
+
             <h1>Matias Jørgensen</h1>
-            <p>Frontend Developer Student</p>
+            <p>{t("Frontend Developer Student")}</p>
             <ul className="hero__content__skills">
               <li>
                 <img src="../icons/html5.svg" alt="html5" />
@@ -45,19 +54,23 @@ export default function Hero() {
             <ul className="hero__content__nav">
               <li>
                 <Link to={"/projects"}>
-                  <PageButton children={"Projects"} />
+                  <PageButton children={t("Projects")} />
                 </Link>
               </li>
               <li>
                 <Link to={"/about"}>
-                  <PageButton children={"About Me"} />
+                  <PageButton children={t("About Me")} />
                 </Link>
               </li>
             </ul>
           </section>
         </main>
       </motion.div>
-      <PageButton hover={true} className={"top right"} children={"DK"} />
+      <PageButton
+        onClick={toggleLanguage}
+        className={"top right"}
+        children={t("button")}
+      />
     </>
   );
 }
