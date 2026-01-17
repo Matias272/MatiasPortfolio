@@ -70,7 +70,7 @@ export default function About() {
           <section className="about__hero">
             <figure className="about__hero__left">
               <div className="about__hero__left__img">
-                <img src="../img/me.jpeg" alt="" />
+                <img src="/img/me.jpeg" alt="" />
               </div>
               <figcaption>
                 <ul className="about__hero__left__ul">
