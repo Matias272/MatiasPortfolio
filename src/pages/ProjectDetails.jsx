@@ -73,7 +73,7 @@ export default function ProjectDetails() {
           <ul className="proDetails__gallery">
             {project.images.map((img) => (
               <li key={img}>
-                <img src={`/${img}`} />
+                <img src={`${img}`} />
               </li>
             ))}
           </ul>
