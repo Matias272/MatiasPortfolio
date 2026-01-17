@@ -5,13 +5,13 @@
     "figma": "https://www.figma.com/design/cnJWZfOwPWDQ3LKnrGIYVr/Cafe-Luna?node-id=0-1&p=f&t=XodLt4E9VgWLr7pE-0",
     "short_des": "projectData.1.shortDes",
     "description": "projectData.1.description",
-    "thumbnail_img": "src/assets/img/cafe/thumbnail.jpg",
+    "thumbnail_img": "/img/cafe/thumbnail.jpg",
     "images": [
-      "src/assets/img/cafe/thumbnail.jpg",
-      "src/assets/img/cafe/cafe(1).jpg",
-      "src/assets/img/cafe/cafe(2).jpg",
-      "src/assets/img/cafe/cafe(3).jpg",
-      "src/assets/img/cafe/cafe(4).jpg"
+      "./img/cafe/thumbnail.jpg",
+      "./img/cafe/cafe(1).jpg",
+      "./img/cafe/cafe(2).jpg",
+      "./img/cafe/cafe(3).jpg",
+      "./img/cafe/cafe(4).jpg"
     ],
     "tech": ["HTML", "CSS", "JAVASCRIPT"],
     "web_url": "https://cafe-luna-projekt.vercel.app/index.html"
@@ -21,13 +21,13 @@
     "title": "projectData.2.title",
     "short_des": "projectData.2.shortDes",
     "description": "projectData.2.description",
-    "thumbnail_img": "src/assets/img/hifi/thumbnail.jpg",
+    "thumbnail_img": "/img/hifi/thumbnail.jpg",
     "images": [
-      "src/assets/img/hifi/thumbnail.jpg",
-      "src/assets/img/hifi/hifi(1).jpg",
-      "src/assets/img/hifi/hifi(2).jpg",
-      "src/assets/img/hifi/hifi(3).jpg",
-      "src/assets/img/hifi/hifi(4).jpg"
+      "./img/hifi/thumbnail.jpg",
+      "./img/hifi/hifi(1).jpg",
+      "./img/hifi/hifi(2).jpg",
+      "./img/hifi/hifi(3).jpg",
+      "./img/hifi/hifi(4).jpg"
     ],
     "tech": ["React/JS", "SCSS", "HTML", "EXPRESS"],
     "web_url": "https://hifi-horizon.vercel.app/"
@@ -37,13 +37,13 @@
     "title": "projectData.3.title",
     "short_des": "projectData.3.shortDes",
     "description": "projectData.3.description",
-    "thumbnail_img": "src/assets/img/hit/thumbnail.jpg",
+    "thumbnail_img": "/img/hit/thumbnail.jpg",
     "images": [
-      "src/assets/img/hit/thumbnail.jpg",
-      "src/assets/img/hit/hit(1).jpg",
-      "src/assets/img/hit/hit(2).jpg",
-      "src/assets/img/hit/hit(3).jpg",
-      "src/assets/img/hit/hit(4).jpg"
+      "./img/hit/thumbnail.jpg",
+      "./img/hit/hit(1).jpg",
+      "./img/hit/hit(2).jpg",
+      "./img/hit/hit(3).jpg",
+      "/.img/hit/hit(4).jpg"
     ],
     "tech": ["HTML", "CSS", "JAVASCRIPT"],
     "web_url": "https://hitstrength.netlify.app/"
@@ -53,14 +53,14 @@
     "title": "projectData.4.title",
     "short_des": "projectData.4.shortDes",
     "description": "projectData.4.description",
-    "thumbnail_img": "src/assets/img/newsify/thumbnail.jpg",
+    "thumbnail_img": "/img/newsify/thumbnail.jpg",
     "images": [
-      "src/assets/img/newsify/thumbnail.jpg",
-      "src/assets/img/newsify/newsify(1).jpg",
-      "src/assets/img/newsify/newsify(2).jpg",
-      "src/assets/img/newsify/newsify(3).jpg",
-      "src/assets/img/newsify/newsify(4).jpg",
-      "src/assets/img/newsify/newsify(5).jpg"
+      "./img/newsify/thumbnail.jpg",
+      "./img/newsify/newsify(1).jpg",
+      "./img/newsify/newsify(2).jpg",
+      "./img/newsify/newsify(3).jpg",
+      "./img/newsify/newsify(4).jpg",
+      "./img/newsify/newsify(5).jpg"
     ],
     "tech": ["React/JS", "SCSS", "News API", "HTML"],
     "web_url": "https://newsifydk.netlify.app/"

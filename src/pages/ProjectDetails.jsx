@@ -48,7 +48,7 @@ export default function ProjectDetails() {
           <figure>
             <img
               className="proDetails__img"
-              src={`/${project.thumbnail_img}`}
+              src={`${project.thumbnail_img}`}
               alt={project.title}
             />
             <figcaption className="proDetails__content">
